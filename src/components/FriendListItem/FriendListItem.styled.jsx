@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { ifProp } from "polished";
 
 export const FriendListItemContainer = styled.ul``;
 
@@ -8,7 +7,7 @@ export const Status = styled.span`
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: ${({ isOnline }) => (isOnline ? "green" : "red")};
+  background-color: ${({ $isHide }) => ($isHide ? "green" : "red")};
   margin-right: 10px;
 `;
 
