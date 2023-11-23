@@ -13,7 +13,7 @@ import {
 const Statistics = ({ title, stats }) => {
   return (
     <StatisticsContainer>
-      {title ? <Title>{title}</Title> : null}
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => (
